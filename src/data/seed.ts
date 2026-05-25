@@ -132,7 +132,8 @@ export const defaultExperience: Experience[] = [
       "Organized and coordinated new branch openings including full IT system deployment",
       "Generated and analyzed business reports for CEO, DCEO, CFO, and Branch Managers using SQL queries",
       "Prepared key reports: loan performance, profit & expense, collection, branch targets, staff attendance"
-    ]
+    ],
+    "descText": "Leading IT operations and managing the IT team across multiple branches\nSet up and supported Loan Management System ensuring smooth daily operations\nOrganized and coordinated new branch openings including full IT system deployment\nGenerated and analyzed business reports for CEO, DCEO, CFO, and Branch Managers using SQL queries\nPrepared key reports: loan performance, profit & expense, collection, branch targets, staff attendance"
   },
   {
     "id": "exp-1778736273718",
@@ -157,7 +158,8 @@ export const defaultExperience: Experience[] = [
       "Helped ensure data accuracy and system reliability",
       "Supported digital record keeping and document management"
     ],
-    "current": false
+    "current": false,
+    "descText": "\nInstalled, configured and maintained computers, printers, network devices and office software\nProvided helpdesk support to staff (hardware, software, network and user accounts)\nManaged user access, passwords and permissions\nMonitored and maintained office network, Wi-Fi and internet connectivity\nPerformed system backup and data recovery\nInstalled and supported business applications used by finance and operations\nMaintained company website and basic hosting/deployment\nTroubleshoot technical issues quickly to minimize downtime\nSupported daily use of accounting and financial systems\nAssisted finance team with:\nSystem setup and troubleshooting\nData entry and system validation\nGenerating reports from systems\nHelped ensure data accuracy and system reliability\nSupported digital record keeping and document management"
   },
   {
     "id": "e2",
