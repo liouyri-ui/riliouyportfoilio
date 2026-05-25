@@ -128,7 +128,7 @@ export default function Hero({ editMode }: HeroProps) {
 
             {/* Title */}
             <h2 className="hero-title">
-              Acting Deputy IT Manager · IT Support Specialist
+              Senior IT Support Officer and System Administrator
             </h2>
 
             {/* Bio */}
