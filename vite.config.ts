@@ -57,5 +57,5 @@ export const defaultTestimonials: Testimonial[] = ${JSON.stringify(data.testimon
       }
     }
   ],
-  base: "/portfolio/",
+  base: "/riliouyportfoilio/",
 })

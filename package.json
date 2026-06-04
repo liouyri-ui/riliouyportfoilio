@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://liouyri.github.io/portfolio",
+  "homepage": "https://liouyri-ui.github.io/riliouyportfoilio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
