@@ -24,7 +24,7 @@ import Footer from './components/page/Footer';
 function AppInner() {
   const { isAdmin, logout } = useAuth();
   const [dark, setDark] = useDarkMode();
-  const [logo, setLogo] = useLocalStorage('portfolio-logo', 'Sun Raksmean');
+  const [logo, setLogo] = useLocalStorage('portfolio-logo', 'Ri Liuoy');
   const [showExport, setShowExport] = useState(false);
 
   // isAdmin IS editMode — no separate editMode state needed
@@ -121,7 +121,7 @@ function AppInner() {
         console.warn('⚠️ GitHub token not set; skipping remote push.');
         return;
       }
-      const repoOwner = 'sunraksmean'; // adjust if different
+      const repoOwner = 'liouyri'; // adjust if different
       const repoName = 'portfolio';
       const filePath = 'src/data/seed.ts';
 

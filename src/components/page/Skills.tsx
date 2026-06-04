@@ -15,7 +15,7 @@ interface SkillsProps {
   isLast: boolean;
 }
 
-const CATEGORIES = ['Systems & Support', 'Networking', 'Database & Reporting', 'Tools & Security'];
+const CATEGORIES = ['Programming & Web', 'Network & Security', 'Systems & Cloud', 'Database & Business Systems'];
 
 function SkillBar({ skill, editMode, onEdit, onDelete, onMove, isFirst, isLast }: { 
   skill: Skill; editMode: boolean; onEdit: (s: Skill) => void; onDelete: (id: string) => void;

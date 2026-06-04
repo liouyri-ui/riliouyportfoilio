@@ -13,22 +13,22 @@ export default function About({ editMode, onMoveSection, isFirst, isLast }: Prop
   useEffect(() => {}, []);
 
   const facts = [
-    { icon: <BookOpen size={16} />, label: 'Education', value: 'Bachelor of IT — RUPP (2018)' },
+    { icon: <BookOpen size={16} />, label: 'Education', value: 'Master IT - Build Bright University' },
     { icon: <Globe size={16} />, label: 'Languages', value: 'Khmer (Native), English (Good)' },
-    { icon: <Heart size={16} />, label: 'Hobbies', value: 'Tech tutorials, Reading, Sports' },
+    { icon: <Heart size={16} />, label: 'Hobbies', value: 'Reading, tutorials, assignments, sports' },
   ];
 
   const highlights = [
-    { icon: <Award size={22} />, num: '7+', label: 'Years in IT' },
-    { icon: <Briefcase size={22} />, num: '3', label: 'Roles Held' },
-    { icon: <GitBranch size={22} />, num: '10+', label: 'Branch Deployments' },
+    { icon: <Award size={22} />, num: '10+', label: 'Technical Domains' },
+    { icon: <Briefcase size={22} />, num: '4', label: 'Professional Roles' },
+    { icon: <GitBranch size={22} />, num: '20+', label: 'Systems & Tools' },
     { icon: <Users size={22} />, num: '100+', label: 'Users Supported' },
   ];
 
   const softSkills = [
     'Team Collaboration', 'Communication', 'Problem Solving',
-    'Hard Working', 'Self-Confidence', 'Integrity',
-    'Adaptability', 'User Training',
+    'Documentation', 'User Training', 'IT Audit Awareness',
+    'Business Analysis', 'Security Mindset',
   ];
 
   return (
@@ -259,25 +259,25 @@ export default function About({ editMode, onMoveSection, isFirst, isLast }: Prop
             <div className="about-left">
               <div className="divider" />
               <h2 className="section-title">About Me</h2>
-              <p className="section-subtitle">IT professional with a passion for systems &amp; people</p>
+              <p className="section-subtitle">IT professional focused on infrastructure, systems, and users</p>
 
               <div className="about-bio">
                 <p>
-                  I'm <strong>Sun Raksmean</strong>, an IT professional based in Phnom Penh, Cambodia
-                  with over 7 years of hands-on experience in IT support, system administration,
-                  and network management.
+                  I'm <strong>Ri Liuoy</strong>, an IT professional based in Phnom Penh, Cambodia
+                  with hands-on experience across network infrastructure, cybersecurity, server administration,
+                  database systems, web technologies, and user support.
                 </p>
                 <p>
-                  Currently serving as Acting Deputy IT Manager at Prasithpheap Credit PLC, I oversee
-                  IT operations across multiple branches — from system deployments to SQL-driven
-                  management reports for C-suite executives.
+                  Currently working as an IT Supervisor at Raffles Medical Clinic, I support healthcare
+                  systems including EMR and RCMS while maintaining network availability, firewall policies,
+                  monitoring tools, business applications, and technical documentation.
                 </p>
                 <p>
-                  I believe great IT support is about more than fixing problems — it's about
-                  empowering people to work smarter, safer, and more confidently with technology.
+                  My background also includes IT Officer work at ACE, computer teaching at Western
+                  International School, and creative design work, giving me a practical mix of technical,
+                  training, documentation, and user-facing experience.
                 </p>
               </div>
-
               {/* Facts */}
               <div className="about-facts">
                 {facts.map((f, i) => (

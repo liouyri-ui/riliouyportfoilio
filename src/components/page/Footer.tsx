@@ -1,4 +1,4 @@
-import { Heart, Mail, Phone, Linkedin, Github, Facebook, ArrowUp } from 'lucide-react';
+import { Heart, Mail, Phone, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -16,11 +16,7 @@ export default function Footer() {
     { label: 'Certifications', href: '#certifications' },
   ];
 
-  const socialLinks = [
-    { icon: <Linkedin size={18} />, href: 'https://www.linkedin.com/in/sun-raksmean-9a4517117/', label: 'LinkedIn' },
-    { icon: <Github size={18} />, href: 'https://github.com/sunraksmean', label: 'GitHub' },
-    { icon: <Facebook size={18} />, href: 'https://www.facebook.com/sun.raksmean.7', label: 'Facebook' },
-  ];
+  const socialLinks: Array<{ icon: React.ReactNode; href: string; label: string }> = [];
 
   return (
     <footer className="footer">
@@ -30,19 +26,21 @@ export default function Footer() {
           {/* ── Branding Section ── */}
           <div className="footer-brand">
             <a href="#hero" onClick={scrollToTop} className="footer-logo">
-              <img src={`${import.meta.env.BASE_URL}/logo.png`} alt="SRS" />
-              <span>Sun Raksmean</span>
+              <img src={`${import.meta.env.BASE_URL}/logo.png`} alt="RL" />
+              <span>Ri Liuoy</span>
             </a>
             <p className="footer-tagline">
-              Dedicated IT professional with 7+ years of experience in Support, System Administration, and Network Management.
+              IT professional focused on network infrastructure, cybersecurity, systems administration, database support, and business applications.
             </p>
-            <div className="footer-socials">
-              {socialLinks.map((link, i) => (
-                <a key={i} href={link.href} target="_blank" rel="noreferrer" className="social-icon-link" title={link.label}>
-                  {link.icon}
-                </a>
-              ))}
-            </div>
+            {socialLinks.length > 0 && (
+              <div className="footer-socials">
+                {socialLinks.map((link, i) => (
+                  <a key={i} href={link.href} target="_blank" rel="noreferrer" className="social-icon-link" title={link.label}>
+                    {link.icon}
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* ── Quick Links ── */}
@@ -60,13 +58,13 @@ export default function Footer() {
             <h4 className="footer-title">Contact</h4>
             <ul className="footer-links">
               <li>
-                <a href="mailto:sunraksmean@gmail.com" className="contact-link">
-                  <Mail size={14} /> sunraksmean@gmail.com
+                <a href="mailto:liouyri@gmail.com" className="contact-link">
+                  <Mail size={14} /> liouyri@gmail.com
                 </a>
               </li>
               <li>
-                <a href="tel:+85516632503" className="contact-link">
-                  <Phone size={14} /> +855 16 632 503
+                <a href="tel:+85510535852" className="contact-link">
+                  <Phone size={14} /> +855 10 535 852
                 </a>
               </li>
               <li className="location-text">Phnom Penh, Cambodia</li>
@@ -77,7 +75,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p className="copyright">
-            © {year} <strong>Sun Raksmean</strong>. Built with <Heart size={12} className="heart-icon" /> in Cambodia.
+            Copyright {year} <strong>Ri Liuoy</strong>. Built with <Heart size={12} className="heart-icon" /> in Cambodia.
           </p>
           <button onClick={scrollToTop} className="back-to-top" title="Back to Top">
             <span>Back to Top</span>

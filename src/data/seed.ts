@@ -2,365 +2,201 @@
 import type { Skill, Experience, Project, Certification, Testimonial } from '../types';
 
 export const defaultSkills: Skill[] = [
-  {
-    "id": "s1",
-    "name": "Windows OS Administration",
-    "level": 95,
-    "category": "Systems & Support"
-  },
-  {
-    "id": "s2",
-    "name": "Microsoft 365 & Office",
-    "level": 90,
-    "category": "Systems & Support"
-  },
-  {
-    "id": "s3",
-    "name": "Active Directory",
-    "level": 80,
-    "category": "Systems & Support"
-  },
-  {
-    "id": "s4",
-    "name": "Helpdesk / Ticketing Systems",
-    "level": 92,
-    "category": "Systems & Support"
-  },
-  {
-    "id": "s5",
-    "name": "IT Asset Management",
-    "level": 85,
-    "category": "Systems & Support"
-  },
-  {
-    "id": "n1",
-    "name": "TCP/IP, DNS, DHCP",
-    "level": 88,
-    "category": "Networking"
-  },
-  {
-    "id": "n2",
-    "name": "Router & Switch Config",
-    "level": 82,
-    "category": "Networking"
-  },
-  {
-    "id": "n3",
-    "name": "Wi-Fi Setup & Troubleshooting",
-    "level": 90,
-    "category": "Networking"
-  },
-  {
-    "id": "n4",
-    "name": "MikroTik (Winbox)",
-    "level": 78,
-    "category": "Networking"
-  },
-  {
-    "id": "n5",
-    "name": "LAN/WAN Setup",
-    "level": 85,
-    "category": "Networking"
-  },
-  {
-    "id": "d1",
-    "name": "SQL Queries & Reporting",
-    "level": 80,
-    "category": "Database & Reporting"
-  },
-  {
-    "id": "d2",
-    "name": "MySQL / SQL Server",
-    "level": 78,
-    "category": "Database & Reporting"
-  },
-  {
-    "id": "d3",
-    "name": "Database Backup & Restore",
-    "level": 85,
-    "category": "Database & Reporting"
-  },
-  {
-    "id": "d4",
-    "name": "Core Banking System Support",
-    "level": 88,
-    "category": "Database & Reporting"
-  },
-  {
-    "id": "t1",
-    "name": "AnyDesk / TeamViewer",
-    "level": 95,
-    "category": "Tools & Security"
-  },
-  {
-    "id": "t2",
-    "name": "VMware / VirtualBox",
-    "level": 75,
-    "category": "Tools & Security"
-  },
-  {
-    "id": "t3",
-    "name": "PowerShell / CMD Scripting",
-    "level": 72,
-    "category": "Tools & Security"
-  },
-  {
-    "id": "t4",
-    "name": "Antivirus & System Security",
-    "level": 88,
-    "category": "Tools & Security"
-  },
-  {
-    "id": "t5",
-    "name": "Data Backup & Recovery",
-    "level": 85,
-    "category": "Tools & Security"
-  }
+  { id: 'prog-1', name: 'HTML, CSS, Bootstrap', level: 90, category: 'Programming & Web' },
+  { id: 'prog-2', name: 'JavaScript, JQuery, Ajax', level: 82, category: 'Programming & Web' },
+  { id: 'prog-3', name: 'C#.NET, ASP.NET, VB.NET', level: 80, category: 'Programming & Web' },
+  { id: 'prog-4', name: 'Java', level: 76, category: 'Programming & Web' },
+  { id: 'prog-5', name: 'Git Version Control', level: 82, category: 'Programming & Web' },
+
+  { id: 'net-1', name: 'Cisco Routing & Switching', level: 88, category: 'Network & Security' },
+  { id: 'net-2', name: 'FortiGate Firewall & VPN', level: 86, category: 'Network & Security' },
+  { id: 'net-3', name: 'MikroTik RouterOS & AP', level: 84, category: 'Network & Security' },
+  { id: 'net-4', name: 'VLAN, NAT, ACL, IPSec VPN', level: 86, category: 'Network & Security' },
+  { id: 'net-5', name: 'Zabbix, Grafana, Nagios, Cacti', level: 78, category: 'Network & Security' },
+
+  { id: 'sys-1', name: 'Windows Server 2019', level: 86, category: 'Systems & Cloud' },
+  { id: 'sys-2', name: 'Microsoft 365, SharePoint, Exchange', level: 86, category: 'Systems & Cloud' },
+  { id: 'sys-3', name: 'CPanel Web & Mail Hosting', level: 82, category: 'Systems & Cloud' },
+  { id: 'sys-4', name: 'EDR, WSUS, GPO, SCCM', level: 78, category: 'Systems & Cloud' },
+  { id: 'sys-5', name: 'Nginx & HAProxy Load Balancing', level: 76, category: 'Systems & Cloud' },
+
+  { id: 'db-1', name: 'SQL Server', level: 86, category: 'Database & Business Systems' },
+  { id: 'db-2', name: 'MySQL, PostgreSQL, MongoDB, Oracle', level: 78, category: 'Database & Business Systems' },
+  { id: 'db-3', name: 'Microsoft Access', level: 84, category: 'Database & Business Systems' },
+  { id: 'db-4', name: 'Stored Procedures & CRUD Logic', level: 82, category: 'Database & Business Systems' },
+  { id: 'db-5', name: 'POS, CRM, EMR, RCMS, QuickBooks', level: 82, category: 'Database & Business Systems' }
 ];
 
 export const defaultExperience: Experience[] = [
   {
-    "id": "e1",
-    "company": "Prasithpheap Credit PLC",
-    "role": "Senior IT Support Officer and System Administrator",
-    "period": "Sep 2022 – Present",
-    "duration": "Current",
-    "current": true,
-    "description": [
-      "Leading IT operations and managing the IT team across multiple branches",
-      "Set up and supported Loan Management System ensuring smooth daily operations",
-      "Organized and coordinated new branch openings including full IT system deployment",
-      "Generated and analyzed business reports for CEO, DCEO, CFO, and Branch Managers using SQL queries",
-      "Prepared key reports: loan performance, profit & expense, collection, branch targets, staff attendance"
-    ],
-    "descText": "Leading IT operations and managing the IT team across multiple branches\nSet up and supported Loan Management System ensuring smooth daily operations\nOrganized and coordinated new branch openings including full IT system deployment\nGenerated and analyzed business reports for CEO, DCEO, CFO, and Branch Managers using SQL queries\nPrepared key reports: loan performance, profit & expense, collection, branch targets, staff attendance"
-  },
-  {
-    "id": "exp-1778736273718",
-    "company": "Jek Meas168 Hang Banhcham",
-    "role": "IT Support – Finance & Operations Support",
-    "period": "March 2021 - Sep 2022",
-    "duration": "",
-    "description": [
-      "Installed, configured and maintained computers, printers, network devices and office software",
-      "Provided helpdesk support to staff (hardware, software, network and user accounts)",
-      "Managed user access, passwords and permissions",
-      "Monitored and maintained office network, Wi-Fi and internet connectivity",
-      "Performed system backup and data recovery",
-      "Installed and supported business applications used by finance and operations",
-      "Maintained company website and basic hosting/deployment",
-      "Troubleshoot technical issues quickly to minimize downtime",
-      "Supported daily use of accounting and financial systems",
-      "Assisted finance team with:",
-      "- System setup and troubleshooting",
-      "- Data entry and system validation",
-      "- Generating reports from systems",
-      "- Helped ensure data accuracy and system reliability",
-      "- Supported digital record keeping and document management"
-    ],
-    "current": false,
-    "descText": "Installed, configured and maintained computers, printers, network devices and office software\nProvided helpdesk support to staff (hardware, software, network and user accounts)\nManaged user access, passwords and permissions\nMonitored and maintained office network, Wi-Fi and internet connectivity\nPerformed system backup and data recovery\nInstalled and supported business applications used by finance and operations\nMaintained company website and basic hosting/deployment\nTroubleshoot technical issues quickly to minimize downtime\nSupported daily use of accounting and financial systems\nAssisted finance team with:\n- System setup and troubleshooting\n- Data entry and system validation\n- Generating reports from systems\n- Helped ensure data accuracy and system reliability\n- Supported digital record keeping and document management"
-  },
-  {
-    "id": "e2",
-    "company": "Prasithpheap Credit PLC",
-    "role": "IT Support & System Administrator",
-    "period": "Jan 2018 – Feb 2021",
-    "duration": "3 years",
-    "description": [
-      "Worked as Helpdesk Technician and Junior System Administrator",
-      "Provided support via phone, remote tools, and on-site assistance",
-      "Troubleshot and maintained printers, scanners, and network devices",
-      "Provided end-user support and training to improve system usage and efficiency",
-      "Installed and maintained CCTV / security camera systems"
+    id: 'exp-raffles',
+    company: 'Raffles Medical Clinic',
+    role: 'IT Supervisor',
+    period: '2024 - Present',
+    duration: 'Current',
+    current: true,
+    description: [
+      'Support EMR doctor system and RCMS customer service system through user requirements, UAT, and daily issue resolution',
+      'Install, configure, monitor, and improve network infrastructure for high availability',
+      'Check firewall policy, routing, switching, VPN, FortiGate, Cisco, Huawei, and IP table rules',
+      'Monitor network traffic and infrastructure health using Cacti, Zabbix, Grafana, and Nagios',
+      'Analyze POS, CRM, QuickBooks, accounting, and warehouse workflows with users and developers',
+      'Design database logic, stored procedures, process flows, technical specifications, and architecture diagrams',
+      'Provide end-user training, support, documentation, CCTV monitoring, Wi-Fi access control, and backup scheduling'
     ]
   },
   {
-    "id": "e3",
-    "company": "IT Global Computer Shop",
-    "role": "IT Technician",
-    "period": "Mar 2016 – Jan 2018",
-    "duration": "Nearly 2 years",
-    "description": [
-      "Provided IT support services to government ministries, companies, factories, and home users",
-      "Installed, configured, and repaired desktop and laptop computers",
-      "Set up, configured, and maintained printers (network & local)",
-      "Supported network setup including LAN/Wi-Fi configuration and troubleshooting",
-      "Delivered and installed IT equipment at customer locations with full setup and testing"
+    id: 'exp-ace',
+    company: 'Australian Centre for Education (ACE)',
+    role: 'IT Officer',
+    period: 'Previous Role',
+    duration: 'Professional experience',
+    current: false,
+    description: [
+      'Managed technology infrastructure including software applications, hardware, network, printers, scanners, and equipment deployment',
+      'Maintained systems covering software installation, license management, server setup, database administration, and user support',
+      'Managed CPanel hosting, mail server, bandwidth, storage, email security gateway, Burp Suite, OWASP, SQL injection testing, and penetration testing activities',
+      'Troubleshot IT equipment, database systems, phone systems, storage, networking, and security operations',
+      'Maintained IT asset lists, daily task updates, SQL Server backups and restores, and branch data center controls',
+      'Administered Microsoft 365 services including SharePoint, Exchange, Teams, and OneDrive',
+      'Configured VLANs, L3 switches, Cisco routers, Juniper, Catalyst, FortiGate, MikroTik, AP, CCTV, ACL, NAT, IPSec VPN, failover, and BGP'
+    ]
+  },
+  {
+    id: 'exp-wis',
+    company: 'Western International School (WIS)',
+    role: 'Computer Teacher',
+    period: 'Previous Role',
+    duration: 'Teaching and systems work',
+    current: false,
+    description: [
+      'Taught students how to use Microsoft 365, Microsoft Access, and advanced Excel',
+      'Prepared lesson plans, updated computer program curriculum, and trained adult learners',
+      'Created an E-Gradebook in Excel to record student scores',
+      'Built a school management system using Microsoft Access, VB.NET, and SQL Server',
+      'Uploaded and maintained WordPress website content and customized responsive pages',
+      'Designed book covers, event flyers, and 2D images using Photoshop',
+      'Installed additional software and troubleshot computing devices'
+    ]
+  },
+  {
+    id: 'exp-lsc',
+    company: 'Lastsmile Company (LSC)',
+    role: 'Creative Graphic Designer',
+    period: 'Previous Role',
+    duration: 'Design experience',
+    current: false,
+    description: [
+      'Worked on 360-degree panoramas for home interiors including bedrooms, kitchens, and bathrooms',
+      'Removed and restored objects from panoramas including tables, cupboards, and people',
+      'Designed banners, brochures, flyers, cards, artwork, promotions, vouchers, and 3D images',
+      'Created logos and slogans based on customer requirements'
     ]
   }
 ];
 
 export const defaultProjects: Project[] = [
   {
-    "id": "p1",
-    "title": "HelpDesk Pro",
-    "description": "A full-featured IT helpdesk ticketing system with real-time notifications, SLA tracking, and multi-tier support escalation built for enterprise use.",
-    "tech": [
-      "React",
-      "NestJS",
-      "Prisma",
-      "PostgreSQL",
-      "TypeScript",
-      "Socket.io"
+    id: 'p1',
+    title: 'EMR & RCMS Healthcare System Support',
+    description: 'Healthcare system support for EMR and RCMS applications, covering user requirements, application performance, UAT, documentation, and daily operational reliability.',
+    tech: ['EMR', 'RCMS', 'Jira', 'ClickUp', 'UAT', 'System Testing'],
+    highlights: [
+      'Updated user requirements and provided ongoing support for doctor and CSR systems',
+      'Monitored application performance and identified bottlenecks with developers',
+      'Coordinated UAT, test plans, quality checks, and end-user training',
+      'Prepared process flows, algorithms, reports, and system documentation',
+      'Improved user interface and workflow clarity with developer collaboration'
     ],
-    "highlights": [
-      "Real-time ticket updates via WebSocket",
-      "SLA management and breach alerts",
-      "Role-based access control (Admin, Agent, User)",
-      "Analytics dashboard with response time metrics",
-      "Email notification integration"
-    ],
-    "status": "live",
-    "color": "#0ea5e9"
+    status: 'live',
+    color: '#0ea5e9'
   },
   {
-    "id": "p2",
-    "title": "AssetFlow",
-    "description": "IT Asset Management System for tracking hardware and software inventory, maintenance schedules, depreciation, and asset assignments across branches.",
-    "tech": [
-      "React",
-      "Node.js",
-      "Express",
-      "MySQL",
-      "Chart.js"
+    id: 'p2',
+    title: 'Enterprise Network & Firewall Administration',
+    description: 'Network and security infrastructure work across routers, switches, firewalls, VPN, VLANs, access points, CCTV, monitoring tools, and branch connectivity.',
+    tech: ['FortiGate', 'Cisco', 'Huawei', 'MikroTik', 'Juniper', 'Zabbix', 'Grafana', 'Nagios'],
+    highlights: [
+      'Configured firewall policies, routing, switching, VPN, NAT, ACL, and IPSec tunnels',
+      'Designed VLANs, inter-VLAN routing, port security, link aggregation, EtherChannel, and STP',
+      'Monitored traffic and availability with Cacti, Zabbix, Grafana, and Nagios',
+      'Managed Nginx and HAProxy load balancing for availability and performance',
+      'Troubleshot access points, CCTV, printers, branch internet, and network devices'
     ],
-    "highlights": [
-      "Full lifecycle asset tracking from procurement to disposal",
-      "QR code-based asset identification",
-      "Maintenance scheduling and reminder system",
-      "Branch-wise inventory reports",
-      "Depreciation calculator with export to Excel"
-    ],
-    "status": "live",
-    "color": "#06b6d4"
+    status: 'live',
+    color: '#06b6d4'
   },
   {
-    "id": "p3",
-    "title": "Support Analytics Dashboard",
-    "description": "Business intelligence dashboard visualizing IT support metrics, response trends, hardware failure rates, and team performance for management reporting.",
-    "tech": [
-      "React",
-      "Recharts",
-      "SQL Server",
-      "REST API",
-      "TypeScript"
+    id: 'p3',
+    title: 'School Management & E-Gradebook System',
+    description: 'Education management tools built during teaching work, including grade recording, student score tracking, curriculum support, and school website maintenance.',
+    tech: ['Microsoft Access', 'VB.NET', 'SQL Server', 'Excel', 'Microsoft 365', 'WordPress'],
+    highlights: [
+      'Created an E-Gradebook in Excel for student score records',
+      'Built a school management system with Microsoft Access, VB.NET, and SQL Server',
+      'Taught Microsoft 365, Microsoft Access, and advanced Excel',
+      'Maintained WordPress content and customized responsive website pages',
+      'Installed software and resolved computing device issues for school users'
     ],
-    "highlights": [
-      "Interactive charts for ticket volume trends",
-      "Team performance and KPI tracking",
-      "Hardware failure pattern analysis",
-      "Automated daily/weekly/monthly report generation",
-      "Export to PDF and Excel"
-    ],
-    "status": "live",
-    "color": "#3b82f6"
+    status: 'live',
+    color: '#3b82f6'
   },
   {
-    "id": "p4",
-    "title": "KnowledgeBase Portal",
-    "description": "Internal knowledge base and documentation portal for IT procedures, troubleshooting guides, and standard operating procedures for staff.",
-    "tech": [
-      "React",
-      "Markdown",
-      "Node.js",
-      "SQLite",
-      "Full-text Search"
+    id: 'p4',
+    title: 'Server, Hosting & IT Asset Operations',
+    description: 'Infrastructure operations covering Windows Server, Microsoft 365, CPanel hosting, mail server, SQL Server backup, IT assets, EDR, and data center controls.',
+    tech: ['Windows Server', 'SQL Server', 'Microsoft 365', 'Exchange', 'SharePoint', 'OneDrive', 'EDR', 'CPanel'],
+    highlights: [
+      'Maintained IT asset lists and daily task updates',
+      'Backed up and restored SQL Server files, scripts, and system configurations',
+      'Controlled branch data centers with primary and secondary server environments',
+      'Administered Microsoft 365 services including SharePoint, Exchange, Teams, and OneDrive',
+      'Managed web hosting, mail server, storage, bandwidth, and email security gateway'
     ],
-    "highlights": [
-      "Markdown-based article editor with live preview",
-      "Full-text search across all documentation",
-      "Category and tag-based organization",
-      "Version history and change tracking",
-      "Role-based content publishing workflow"
-    ],
-    "status": "development",
-    "color": "#8b5cf6"
+    status: 'live',
+    color: '#8b5cf6'
   },
   {
-    "id": "p5",
-    "title": "Personal Portfolio Website",
-    "description": "This portfolio website — a responsive, dark/light mode professional showcase built with React + Vite featuring edit mode for dynamic content management.",
-    "tech": [
-      "React",
-      "Vite",
-      "TypeScript",
-      "CSS Variables",
-      "localStorage"
+    id: 'p5',
+    title: 'POS, CRM & Warehouse System Analysis',
+    description: 'Business and systems analysis for sales, accounting, stock, POS, CRM, QuickBooks, and warehouse workflows, translating needs into process and database design.',
+    tech: ['POS', 'CRM', 'QuickBooks', 'SQL Server', 'Stored Procedures', 'Warehouse Management', 'Flowcharts'],
+    highlights: [
+      'Analyzed QuickBooks server, accounting system, warehouse inbound and outbound workflows',
+      'Designed database structures from user requirements and created stored procedures for CRUD',
+      'Prepared system flows, architecture diagrams, technical specifications, and reports',
+      'Supported sales target tracking, daily expenses, income, and sales reporting',
+      'Provided user training and implementation support for new system processes'
     ],
-    "highlights": [
-      "Full dark/light mode with smooth transition",
-      "Edit mode for real-time content management",
-      "Persistent data with localStorage",
-      "Fully responsive mobile-first design",
-      "Kantumruy Pro font with Khmer heritage"
-    ],
-    "status": "live",
-    "color": "#10b981"
+    status: 'live',
+    color: '#10b981'
   }
 ];
 
 export const defaultCertifications: Certification[] = [
-  {
-    "id": "c1",
-    "title": "Bachelor of Information Technology",
-    "issuer": "Royal University of Phnom Penh (RUPP)",
-    "year": "2018",
-    "icon": "🎓"
-  },
-  {
-    "id": "c2",
-    "title": "Cisco Networking Fundamentals",
-    "issuer": "Cisco Networking Academy",
-    "year": "2017",
-    "icon": "🌐"
-  },
-  {
-    "id": "c3",
-    "title": "Microsoft 365 Fundamentals",
-    "issuer": "Microsoft",
-    "year": "2022",
-    "icon": "☁️"
-  },
-  {
-    "id": "c4",
-    "title": "MikroTik Certified Network Associate",
-    "issuer": "MikroTik",
-    "year": "2021",
-    "icon": "📡"
-  },
-  {
-    "id": "c5",
-    "title": "Windows Server Administration",
-    "issuer": "Microsoft (Self-Study)",
-    "year": "2019",
-    "icon": "🖥️"
-  }
+  { id: 'c1', title: 'Postgraduate Master Degree in Information Technology', issuer: 'Build Bright University', year: '2024 - Present', icon: 'IT' },
+  { id: 'c2', title: 'Bachelor Degree in Computer Science', issuer: 'Royal University of Phnom Penh', year: '2014 - 2018', icon: 'CS' },
+  { id: 'c3', title: 'Cisco Network Administration Training', issuer: 'RCI', year: 'Training', icon: 'NW' },
+  { id: 'c4', title: 'Web Designing Short Course', issuer: 'RUPP Lecturer', year: 'Training', icon: 'WD' },
+  { id: 'c5', title: 'C# Training Course', issuer: 'VTC Center', year: 'Training', icon: 'C#' },
+  { id: 'c6', title: 'Android App Software Development UX Designer Course', issuer: 'CKCC', year: 'Training', icon: 'UX' }
 ];
 
 export const defaultTestimonials: Testimonial[] = [
   {
-    "id": "t1",
-    "name": "So Pitou",
-    "role": "IT Manager",
-    "company": "Prasithpheap Credit PLC",
-    "message": "Raksmean is an incredibly dedicated IT professional. His ability to handle complex system deployments across multiple branches while maintaining high service quality is remarkable. He consistently goes above and beyond.",
-    "initials": "SP"
+    id: 't1',
+    name: 'Nhem Chhordaren',
+    role: 'IT Assistant Manager',
+    company: 'ACE',
+    message: 'Professional reference listed in the CV for IT infrastructure, support, and operations experience.',
+    initials: 'NC'
   },
   {
-    "id": "t2",
-    "name": "Branch Operations Team",
-    "role": "Operations",
-    "company": "Prasithpheap Credit PLC",
-    "message": "Whenever we had IT issues, Raksmean was always responsive and professional. His remote support skills saved us countless hours of downtime. A true team player who explains things clearly to non-technical staff.",
-    "initials": "BT"
-  },
-  {
-    "id": "t3",
-    "name": "Management Team",
-    "role": "Senior Management",
-    "company": "Prasithpheap Credit PLC",
-    "message": "The reports Raksmean generates are always accurate, insightful, and delivered on time. His SQL analysis has helped us make better decisions about branch performance and resource allocation.",
-    "initials": "MT"
+    id: 't2',
+    name: 'Pheng Marady',
+    role: 'CCNA Lecturer',
+    company: 'Salarcyber',
+    message: 'Professional reference listed in the CV for networking knowledge and technical development.',
+    initials: 'PM'
   }
 ];

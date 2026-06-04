@@ -1,6 +1,6 @@
 // src/components/Hero.tsx
 import { useState } from 'react';
-import { ArrowDown, Download, Mail, MapPin, Phone, SendHorizontal } from 'lucide-react';
+import { ArrowDown, Download, Mail, MapPin, Phone } from 'lucide-react';
 
 interface HeroProps {
   editMode: boolean;
@@ -123,12 +123,12 @@ export default function Hero({ editMode }: HeroProps) {
 
             {/* Name */}
             <h1 className="hero-name">
-              <span className="name-accent">Sun Raksmean</span>
+              <span className="name-accent">Ri Liuoy</span>
             </h1>
 
             {/* Title */}
             <h2 className="hero-title">
-              Senior IT Support Officer and System Administrator
+              IT Supervisor
             </h2>
 
             {/* Bio */}
@@ -140,16 +140,15 @@ export default function Hero({ editMode }: HeroProps) {
               marginBottom: '1.5rem',
               fontWeight: 300,
             }}>
-              7+ years of experience in IT support, system administration, and network management at Prasithpheap Credit PLC.
-              Passionate about building reliable IT infrastructure, empowering users, and leveraging data for smart decisions.
+              IT professional in Phnom Penh with hands-on experience across network infrastructure, cybersecurity, server administration,
+              database systems, business applications, and end-user support.
             </p>
 
             {/* Contact pills */}
             <div className="hero-pills">
               {[
-                { icon: <Mail size={13} />, text: 'sunraksmean@gmail.com' },
-                { icon: <SendHorizontal size={13} />, text: '016 632 503' },
-                { icon: <Phone size={13} />, text: '+855 16 632-503' },
+                { icon: <Mail size={13} />, text: 'liouyri@gmail.com' },
+                { icon: <Phone size={13} />, text: '+855 10 535 852' },
                 { icon: <MapPin size={13} />, text: 'Phnom Penh, Cambodia' }
               ].map((item, i) => (
                 <span key={i} style={{
@@ -171,7 +170,7 @@ export default function Hero({ editMode }: HeroProps) {
               <a href="#projects" className="btn btn-outline">
                 View Projects
               </a>
-              <a href={`${import.meta.env.BASE_URL}/SunRaksmean_Resume.pdf`} className="btn btn-resume">
+              <a href={`${import.meta.env.BASE_URL}/Riliouy_CV.pdf`} className="btn btn-resume">
                 <Download size={16} className="resume-icon" />
                 <span>Download Resume</span>
               </a>
@@ -197,7 +196,7 @@ export default function Hero({ editMode }: HeroProps) {
                 <div className="avatar-shimmer" />
                 <img
                   src={`${import.meta.env.BASE_URL}/photo.png`}
-                  alt="Sun Raksmean"
+                  alt="Ri Liuoy"
                   className="avatar-photo"
                 />
               </div>

@@ -1,6 +1,6 @@
 // src/components/Contact.tsx
 import { useState } from 'react';
-import { Mail, MapPin, Phone, Send, Check, SendHorizontal, ChevronUp, ChevronDown, Linkedin, Github, Clock, Calendar, ExternalLink, Facebook } from 'lucide-react';
+import { Mail, MapPin, Phone, Send, Check, ChevronUp, ChevronDown, Clock } from 'lucide-react';
 
 interface Props {
   editMode?: boolean;
@@ -45,16 +45,12 @@ export default function Contact({ editMode, onMoveSection, isFirst, isLast }: Pr
   };
 
   const contactItems = [
-    { icon: <Mail size={18} />, label: 'Email', value: 'sunraksmean@gmail.com', href: 'mailto:sunraksmean@gmail.com' },
-    { icon: <Phone size={18} />, label: 'Phone', value: '+855 16 632-503', href: 'tel:+85516632503' },
-    { icon: <SendHorizontal size={18} />, label: 'Telegram', value: '+855 16 632 503', href: 'https://t.me/SRS_007' },
+    { icon: <Mail size={18} />, label: 'Email', value: 'liouyri@gmail.com', href: 'mailto:liouyri@gmail.com' },
+    { icon: <Phone size={18} />, label: 'Phone', value: '+855 10 535 852', href: 'tel:+85510535852' },
+    { icon: <MapPin size={18} />, label: 'Address', value: 'Chaktumok, Daun Penh, Phnom Penh', href: '#contact' },
   ];
 
-  const socialLinks = [
-    { icon: <Linkedin size={18} />, label: 'LinkedIn', value: 'Sun Raksmean', href: 'https://www.linkedin.com/in/sun-raksmean-9a4517117/' },
-    { icon: <Github size={18} />, label: 'GitHub', value: 'sunraksmean', href: 'https://github.com/sunraksmean' },
-    { icon: <Facebook size={18} />, label: 'Facebook', value: 'Sun Raksmean', href: 'https://www.facebook.com/sun.raksmean.7' },
-  ];
+  const socialLinks: Array<{ icon: React.ReactNode; label: string; href: string }> = [];
 
   return (
     <section id="contact" className="section" style={{ position: 'relative' }}>
@@ -67,7 +63,7 @@ export default function Contact({ editMode, onMoveSection, isFirst, isLast }: Pr
       <div className="container" style={{ textAlign: 'center' }}>
         <div className="divider" style={{ margin: '0 auto 0.75rem' }} />
         <h2 className="section-title">Get In Touch</h2>
-        <p className="section-subtitle" style={{ marginBottom: '1.5rem' }}>Let's discuss how I can contribute to your team</p>
+        <p className="section-subtitle" style={{ marginBottom: '1.5rem' }}>Let's discuss IT infrastructure, systems, or support needs</p>
         
         <div className="availability-badge" style={{ marginInline: 'auto', marginBottom: '0.75rem' }}>
           <span className="pulse-dot" />
@@ -78,10 +74,10 @@ export default function Contact({ editMode, onMoveSection, isFirst, isLast }: Pr
           
           {/* ── Left Column: Bio & Core Info ── */}
           <div className="contact-main-info">
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--text-primary)' }}>Let's Build Something Great</h3>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--text-primary)' }}>Let's Connect</h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '2rem', fontWeight: 300, fontSize: '1.05rem' }}>
-              I'm always interested in hearing about new projects, IT management challenges, or technical collaborations. 
-              Whether you're looking for a dedicated IT professional or just want to say hi, feel free to reach out through any of these channels.
+              I am available to discuss IT supervision, network infrastructure, cybersecurity, business systems,
+              database support, user training, and technical operations roles or collaborations.
             </p>
 
             <div className="contact-card-grid">
@@ -106,21 +102,22 @@ export default function Contact({ editMode, onMoveSection, isFirst, isLast }: Pr
 
             <div className="info-box">
               <h4 className="info-box-title"><MapPin size={16} /> Location</h4>
-              <p className="info-box-text">Phnom Penh, Cambodia (GMT+7)</p>
+              <p className="info-box-text">Chaktumok, Daun Penh, Phnom Penh, Cambodia (GMT+7)</p>
             </div>
 
-            <div className="social-connect">
-              <h4 className="social-title">Connect on Social</h4>
-              <div className="social-buttons">
-                {socialLinks.map((link, i) => (
-                  <a key={i} href={link.href} target="_blank" rel="noreferrer" className="social-btn">
-                    {link.icon}
-                    <span>{link.label}</span>
-                    <ExternalLink size={12} className="ext-icon" />
-                  </a>
-                ))}
+            {socialLinks.length > 0 && (
+              <div className="social-connect">
+                <h4 className="social-title">Connect on Social</h4>
+                <div className="social-buttons">
+                  {socialLinks.map((link, i) => (
+                    <a key={i} href={link.href} target="_blank" rel="noreferrer" className="social-btn">
+                      {link.icon}
+                      <span>{link.label}</span>
+                    </a>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
 
           {/* ── Message form card (DISABLED BY COMMENT) ── */}
